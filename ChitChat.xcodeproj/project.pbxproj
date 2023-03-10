@@ -11,6 +11,7 @@
 		28EC076329BB7BFB0040EB36 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC076229BB7BFB0040EB36 /* ContentView.swift */; };
 		28EC076529BB7BFD0040EB36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28EC076429BB7BFD0040EB36 /* Assets.xcassets */; };
 		28EC076829BB7BFD0040EB36 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28EC076729BB7BFD0040EB36 /* Preview Assets.xcassets */; };
+		28EC077029BB7EE50040EB36 /* TitlteRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC076F29BB7EE50040EB36 /* TitlteRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		28EC076229BB7BFB0040EB36 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		28EC076429BB7BFD0040EB36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28EC076729BB7BFD0040EB36 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		28EC076F29BB7EE50040EB36 /* TitlteRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlteRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				28EC076029BB7BFB0040EB36 /* ChitChatApp.swift */,
 				28EC076229BB7BFB0040EB36 /* ContentView.swift */,
+				28EC076E29BB7E8E0040EB36 /* Components */,
 				28EC076429BB7BFD0040EB36 /* Assets.xcassets */,
 				28EC076629BB7BFD0040EB36 /* Preview Content */,
 			);
@@ -65,6 +68,14 @@
 				28EC076729BB7BFD0040EB36 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		28EC076E29BB7E8E0040EB36 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				28EC076F29BB7EE50040EB36 /* TitlteRow.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +150,7 @@
 			files = (
 				28EC076329BB7BFB0040EB36 /* ContentView.swift in Sources */,
 				28EC076129BB7BFB0040EB36 /* ChitChatApp.swift in Sources */,
+				28EC077029BB7EE50040EB36 /* TitlteRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
