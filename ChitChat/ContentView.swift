@@ -12,15 +12,18 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            TitlteRow()
-            
-            ScrollView() {
-                ForEach(tempMessage, id: \.self) { text in
-                    MessageBubble(message: Message(id: "123", text: text, received: true, timestamp: Date()))
+            VStack {
+                TitlteRow()
+                
+                ScrollView() {
+                    ForEach(tempMessage, id: \.self) { text in
+                        MessageBubble(message: Message(id: "123", text: text, received: false, timestamp: Date()))
+                    }
                 }
+                .padding(.top, 10)
             }
-            .padding(.top, 10)
             
+            MessageField()
         }
     }
 }
