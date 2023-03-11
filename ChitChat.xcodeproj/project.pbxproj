@@ -10,6 +10,7 @@
 		283DFB8829BCCD52003A71CD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 283DFB8729BCCD52003A71CD /* GoogleService-Info.plist */; };
 		283DFB8B29BCCF39003A71CD /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 283DFB8A29BCCF39003A71CD /* FirebaseFirestore */; };
 		283DFB8D29BCCF39003A71CD /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 283DFB8C29BCCF39003A71CD /* FirebaseFirestoreSwift */; };
+		283DFB8F29BCD335003A71CD /* MessagesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283DFB8E29BCD335003A71CD /* MessagesManager.swift */; };
 		28EC076129BB7BFB0040EB36 /* ChitChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC076029BB7BFB0040EB36 /* ChitChatApp.swift */; };
 		28EC076329BB7BFB0040EB36 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC076229BB7BFB0040EB36 /* ContentView.swift */; };
 		28EC076529BB7BFD0040EB36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28EC076429BB7BFD0040EB36 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		283DFB8729BCCD52003A71CD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		283DFB8E29BCD335003A71CD /* MessagesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesManager.swift; sourceTree = "<group>"; };
 		28EC075D29BB7BFB0040EB36 /* ChitChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChitChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28EC076029BB7BFB0040EB36 /* ChitChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChitChatApp.swift; sourceTree = "<group>"; };
 		28EC076229BB7BFB0040EB36 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				28EC076E29BB7E8E0040EB36 /* Components */,
 				28EC076429BB7BFD0040EB36 /* Assets.xcassets */,
 				28EC076629BB7BFD0040EB36 /* Preview Content */,
+				283DFB8E29BCD335003A71CD /* MessagesManager.swift */,
 			);
 			path = ChitChat;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 				28EC076129BB7BFB0040EB36 /* ChitChatApp.swift in Sources */,
 				28EC077729BB96710040EB36 /* MessageField.swift in Sources */,
 				28EC077029BB7EE50040EB36 /* TitlteRow.swift in Sources */,
+				283DFB8F29BCD335003A71CD /* MessagesManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
