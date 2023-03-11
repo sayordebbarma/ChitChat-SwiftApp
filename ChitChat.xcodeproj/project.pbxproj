@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		283DFB8829BCCD52003A71CD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 283DFB8729BCCD52003A71CD /* GoogleService-Info.plist */; };
+		283DFB8B29BCCF39003A71CD /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 283DFB8A29BCCF39003A71CD /* FirebaseFirestore */; };
+		283DFB8D29BCCF39003A71CD /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 283DFB8C29BCCF39003A71CD /* FirebaseFirestoreSwift */; };
 		28EC076129BB7BFB0040EB36 /* ChitChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC076029BB7BFB0040EB36 /* ChitChatApp.swift */; };
 		28EC076329BB7BFB0040EB36 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC076229BB7BFB0040EB36 /* ContentView.swift */; };
 		28EC076529BB7BFD0040EB36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28EC076429BB7BFD0040EB36 /* Assets.xcassets */; };
@@ -18,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		283DFB8729BCCD52003A71CD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		28EC075D29BB7BFB0040EB36 /* ChitChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChitChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28EC076029BB7BFB0040EB36 /* ChitChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChitChatApp.swift; sourceTree = "<group>"; };
 		28EC076229BB7BFB0040EB36 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -34,6 +38,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				283DFB8B29BCCF39003A71CD /* FirebaseFirestore in Frameworks */,
+				283DFB8D29BCCF39003A71CD /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,9 +65,10 @@
 		28EC075F29BB7BFB0040EB36 /* ChitChat */ = {
 			isa = PBXGroup;
 			children = (
-				28EC077129BB85190040EB36 /* Models */,
 				28EC076029BB7BFB0040EB36 /* ChitChatApp.swift */,
 				28EC076229BB7BFB0040EB36 /* ContentView.swift */,
+				283DFB8729BCCD52003A71CD /* GoogleService-Info.plist */,
+				28EC077129BB85190040EB36 /* Models */,
 				28EC076E29BB7E8E0040EB36 /* Components */,
 				28EC076429BB7BFD0040EB36 /* Assets.xcassets */,
 				28EC076629BB7BFD0040EB36 /* Preview Content */,
@@ -111,6 +118,10 @@
 			dependencies = (
 			);
 			name = ChitChat;
+			packageProductDependencies = (
+				283DFB8A29BCCF39003A71CD /* FirebaseFirestore */,
+				283DFB8C29BCCF39003A71CD /* FirebaseFirestoreSwift */,
+			);
 			productName = ChitChat;
 			productReference = 28EC075D29BB7BFB0040EB36 /* ChitChat.app */;
 			productType = "com.apple.product-type.application";
@@ -139,6 +150,9 @@
 				Base,
 			);
 			mainGroup = 28EC075429BB7BFB0040EB36;
+			packageReferences = (
+				283DFB8929BCCF39003A71CD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 28EC075E29BB7BFB0040EB36 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -155,6 +169,7 @@
 			files = (
 				28EC076829BB7BFD0040EB36 /* Preview Assets.xcassets in Resources */,
 				28EC076529BB7BFD0040EB36 /* Assets.xcassets in Resources */,
+				283DFB8829BCCD52003A71CD /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,6 +386,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		283DFB8929BCCF39003A71CD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		283DFB8A29BCCF39003A71CD /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 283DFB8929BCCF39003A71CD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		283DFB8C29BCCF39003A71CD /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 283DFB8929BCCF39003A71CD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 28EC075529BB7BFB0040EB36 /* Project object */;
 }
