@@ -15,12 +15,19 @@ struct ContentView: View {
             VStack {
                 TitlteRow()
                 
-                ScrollView {
-                    ForEach(messageManager.messages, id: \.id) { message in
-                        MessageBubble(message: message)
+                ScrollViewReader { proxy in
+                    ScrollView {
+                        ForEach(messageManager.messages, id: \.id) { message in
+                            MessageBubble(message: message)
+                        }
+                    }
+                    .padding(.top, 10)
+                    .onChange(of: messageManager.lastMessageId) { id in
+                        withAnimation {
+                            proxy.scrollTo(id, anchor: .bottom)
+                        }
                     }
                 }
-                .padding(.top, 10)
             }
             
             MessageField()
