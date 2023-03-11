@@ -15,7 +15,7 @@ struct ContentView: View {
             VStack {
                 TitlteRow()
                 
-                ScrollView() {
+                ScrollView {
                     ForEach(messageManager.messages, id: \.id) { message in
                         MessageBubble(message: message)
                     }
@@ -24,6 +24,7 @@ struct ContentView: View {
             }
             
             MessageField()
+                .environmentObject(messageManager)
         }
     }
 }
